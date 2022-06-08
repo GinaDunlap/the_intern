@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Intern - Registry</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+header {
+  
+  background-color: rgb(214, 79, 30);
+  padding: 30px;
+  text-align: left;
+  height: 15px;
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  float: left;
+  width: 40%;
+  height: 580px; 
+  background: rgb(254, 254, 254);
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: rgb(214, 79, 30);
+  padding: 1px;
+  text-align: center;
+  color: #fffefe;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h3>the intern &emsp14;&emsp14;&emsp14;&emsp14;  &emsp14;<a href="http://127.0.0.1:5500/Landing_Page/landing.html" style=text-decoration:none; >home</a>  | &emsp14;<a href="http://127.0.0.1:5500/Profile_Page/profile_test.html" style=text-decoration:none;>profile</a> | &emsp14;<a href="http://127.0.0.1:5500/Registry_Page/reg_test.html" style=text-decoration:none;>registry</a> </h3>
+
+
+<header>
+    <center>
+  <h2>Profile Registry</h2>
+  </center>
+</header>
+
+<section>
+  <nav>
+
+    <img src="Images/AVATAR_round.png" alt="Avatar" width="160" height="160" class="avatar">
+    <p><b>Upload Profile Image</b></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <br></br>
+    <!-- FIVE-STAR RATING -->
+<p><b><h1>Rate Your Internship</h1></b></p>
+
+<div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+
+  </nav>
+  
+  <link rel="stylesheet" href="registry.css">
+
+<br></br>
+<form action="/action_page.php">
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+<br></br>
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
+  
+<br></br>  
+<form action="/action_page.php">
+    <label for="schools">College/University:</label>
+    <select name="schools" id="schools">
+    <option value=""></option>
+    <option value="Agnes Scott College">Agnes Scott College</option>
+    <option value="American Intercontinental University">American Intercontinental University</option>   
+    <option value="Atlanta Metropolitan State College">Atlanta Metropolitan State College</option>
+    <option value="Clark Atlanta University">Clark Atlanta University</option>
+    <option value="Clayton State University">Clayton State University</option>
+    <option value="Emory University">Emory University</option>
+    <option value="Georgia Gwinnett College">Georgia Gwinnett College</option>
+    <option value="Georgia Institute of Technology ">Georgia Institute of Technology</option>
+    <option value="Georgia Piedmont Technical College">Georgia Piedmont Technical College</option>
+    <option value="Georgia State University">Georgia State University</option>
+    <option value="Kennesaw State University">Kennesaw State University</option>
+    <option value="Mercer University">Mercer University</option>
+    <option value="Morehouse College">Morehouse College</option>
+    <option value="Morris Brown College">Morris Brown College</option>
+    <option value="Oglethorpe University">Oglethorpe University</option>
+   <option value="Spelman College">Spelman College</option>
+    <option value="University of Georgia">University of Georgia</option>
+    </select><br>
+
+<br></br>
+    <form action="/action_page.php">
+        <label for="company">Company of Internship:</label>
+        <select name="company" id="company"><br>
+        <option value=""></option>
+        <option value="Amazon">Amazon</option>
+        <option value="Capgemini">Capgemini</option>
+        <option value="Chick-Fil-A">Chick-Fil-A</option>
+        <option value="Cox Enterprises">Cox Enterprises</option>
+        <option value="Delta Airlines">Delta Airlines</option>
+        <option value="DigitalCrafts">DigitalCrafts</option>
+        <option value="EY">EY</option>
+        <option value="Elavon">Elavon</option>
+        <option value="Foot Locker">Foot Locker</option>
+        <option value="Georgia Aquarium">Georgia Aquarium</option>
+        <option value="Inspire Brands">Inspire Brands</option>
+        <option value="Intercontinental Exchange">Intercontinental Exchange (ICE)</option>
+        <option value="Mail Chimp">Mail Chimp</option>
+        <option value="NAPA Auto Parts">NAPA Auto Parts</option>
+        <option value="Revel Systems">Revel Systems</option>
+
+
+        </select><br>
+
+<br></br>       
+        <form action="/action_page.php">
+        <label for="industries">Industry:</label>
+        <select name="industries" id="industries">
+        <option value=""></option>
+        <option value="Accounting">Accounting</option>  
+        <option value="Advertising">Advertising</option>
+        <option value="Automotive">Automotive</option>
+        <option value="Aviation">Aviation</option>
+        <option value="Construction">Construction</option>
+        <option value="Culinary">Culinary</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Media">Media</option>
+        <option value="Medical">Medical</option>
+        <option value="Non-Profit">Non-Profit</option>
+        <option value="Retail">Retail</option>
+        <option value="Sales">Sales</option>
+
+
+    </select> <br>
+
+    <br>
+      <!-- <form action="/action_page.php">
+        <p>Compensation:</p>
+      <input type="radio" id="html" name="pick" value="Paid">
+      <label for="paid">Paid</label><br>
+      <input type="radio" id="html" name="pick" value="non-paid">
+      <label for="non-paid">Non-paid</label><br> -->
+
+ 
+
+    </select><br>
+
+    <form action="/action_page.php">
+        <label for="year">Year of Internship</label>
+        <select name="year" id="year"> 
+        <option value="" ></option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+
+</select>
+<br></br>
+
+<form action="/action_page.php">
+  <p><label for="intro">About Me:</label></p>
+  <textarea id="intro" name="intro" rows="4" cols="50"></textarea>
+  <br>
+  <!-- <input type="submit" value="Submit"> -->
+</form>
+
+
+<form action="/action_page.php">
+  <p><label for="rev">Review:</label></p>
+  <textarea id="rev" name="rev" rows="4" cols="50"></textarea>
+  <br>
+</form>
+
+<br>
+  <!-- <input type="submit" value="Submit"> -->
+
+  <input type="button" onclick="window.location.href='http://127.0.0.1:5500/Profile_Page/profile_test.html';" value="Submit" />
+
+  <input type="button" onclick="window.location.href='http://127.0.0.1:5500/Registry_Page/reg_test.html';" value="Reset" />
+
+
+
+
+  <!-- <input type="reset"> -->
+</form> 
+
+
+
+<!-- /* <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p> */ -->
+
+
+<footer>
+    <p><a href="http://127.0.0.1:5500/Landing_Page/landing.html?#">the intern 2022</a></p>
+</footer>
+
+</body>
+</html>
+
